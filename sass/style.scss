@@ -1,0 +1,172 @@
+@import "nav";
+@import "buttoncolor";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+%align-item {
+    display: flex;
+    align-items: center;
+}
+
+#hero {
+    background-color: #eee;
+    min-height: 90vh;
+    @extend %align-item;
+
+    & .row {
+        @extend %align-item;
+        justify-content: center;
+
+        & .col-lg-6 h2 {
+           font-size: 60px;
+        }
+    }
+
+}
+
+#about {
+
+    & .first {
+        min-height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    & .about-left {
+        position: relative;
+
+        & .absolute {
+            position: absolute;
+            background: #fff;
+            left: 10%;
+            right: 10%;
+            bottom: 20%;
+            text-align: center;
+            color: #212529;
+            font-size: 28px;
+
+        }
+    }
+
+    & .about-right {
+
+        & p {
+            text-align: justify;
+            padding-bottom: 10px;
+        }
+
+        & .d-flex i {
+            padding-right: 10px;
+            color: $font;
+        }
+    }
+}
+
+#reason {
+    background-color: rgba(255, 255, 255, 0.3);
+
+    & .red {
+        text-align: justify;
+        background: $font;
+        color: #fff;
+    }
+
+    & .reason-right {
+        & .card {
+            margin-bottom: 10px;
+            background-color: #fffcde;
+
+            & i {
+                font-size: 35px;
+                color: blueviolet;
+            }
+            & h3 {
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+#counter {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342)),url(../img/stats-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & span {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    & p {
+        color: rgba(248, 248, 248, 0.911);
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+
+
+#events {
+
+    & .carousel-inner {
+        min-height: 60vh;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+}
+
+#chef {
+
+    & .card {
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 0px 1px 5px 1px #000;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            box-shadow: 0px 1px 8px 1px #000;
+            transform: scale(1.1);
+        }
+        &:hover .social {
+            opacity: 1;
+            right: 20px;
+        }
+
+        & .social {
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 10px;
+            background: rgba(197, 197, 197, 0.774);
+            border-radius: 4px;
+            opacity: 0;
+
+            transition: all 0.3s ease-in;
+
+            & i {
+                color: $font;
+                margin: 8px 0;
+                transition: all 0.3s ease-in;
+                
+
+                &:hover {
+                    color: rgb(34, 51, 145);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

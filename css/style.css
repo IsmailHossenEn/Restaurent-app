@@ -1,0 +1,218 @@
+nav {
+  background-color: #ffff;
+  position: fixed;
+}
+
+span {
+  color: #ce123e;
+}
+
+.more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.more-btn:hover {
+  color: #ce1212;
+  background: #fff;
+}
+
+.hero-btn {
+  font-size: 14px;
+  color: #fff;
+  background: #ce1212;
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.hero-btn:hover {
+  color: #fff;
+  background: rgba(206, 18, 18, 0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hero, #hero .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero {
+  background-color: #eee;
+  min-height: 90vh;
+}
+
+#hero .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero .row .col-lg-6 h2 {
+  font-size: 60px;
+}
+
+#about .first {
+  min-height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about .about-left {
+  position: relative;
+}
+
+#about .about-left .absolute {
+  position: absolute;
+  background: #fff;
+  left: 10%;
+  right: 10%;
+  bottom: 20%;
+  text-align: center;
+  color: #212529;
+  font-size: 28px;
+}
+
+#about .about-right p {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+
+#about .about-right .d-flex i {
+  padding-right: 10px;
+  color: #ce123e;
+}
+
+#reason {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#reason .red {
+  text-align: justify;
+  background: #ce123e;
+  color: #fff;
+}
+
+#reason .reason-right .card {
+  margin-bottom: 10px;
+  background-color: #fffcde;
+}
+
+#reason .reason-right .card i {
+  font-size: 35px;
+  color: blueviolet;
+}
+
+#reason .reason-right .card h3 {
+  padding: 20px 0;
+}
+
+#counter {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.342))), url(../img/stats-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.342)), url(../img/stats-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#counter span {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#counter p {
+  color: rgba(248, 248, 248, 0.911);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#events .carousel-inner {
+  min-height: 60vh;
+}
+
+#events img {
+  width: 100%;
+  height: 100%;
+}
+
+#chef .card {
+  position: relative;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 5px 1px #000;
+          box-shadow: 0px 1px 5px 1px #000;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#chef .card:hover {
+  -webkit-box-shadow: 0px 1px 8px 1px #000;
+          box-shadow: 0px 1px 8px 1px #000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#chef .card:hover .social {
+  opacity: 1;
+  right: 20px;
+}
+
+#chef .card .social {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 10px;
+  background: rgba(197, 197, 197, 0.774);
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#chef .card .social i {
+  color: #ce123e;
+  margin: 8px 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#chef .card .social i:hover {
+  color: #223391;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=style.css.map */
